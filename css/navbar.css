@@ -1,0 +1,27 @@
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    background-color: #FDEEDC;
+}
+.navbar-brand{
+    margin-left: 50px;
+    color: #512b00;
+}
+.navbar-brand img{
+    height: 50px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.collapse{
+    justify-content: center;
+}
+
+.navbar-nav{
+    font-size: 20px;
+    width: 35vw;
+    /* background-color: aqua; */
+    justify-content: space-between;
+}
+.navbar-nav div a{
+    color: #995100;
+}
