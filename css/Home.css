@@ -140,6 +140,7 @@ body{
     
   }
 
+  /* Gallery */
   .row{
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +161,61 @@ body{
     cursor: pointer;
     border-radius: 6px;
   }
+
+  /* Carousel */
+  .button-fitur{
+    width: 230px;
+    height: 60px;
+    background-color: #fee6e3;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffff;
+
+  }
+
+  #fitur h2{
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .card-fitur{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .card-fitur span{
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .card-fitur h6{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .card-fitur button{
+    background-color: #fee6e3;
+    border: none;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .card-fitur .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+  }
+  .card-fitur .overlay:hover{
+    opacity: 1;
+  }
+
 
   /* Galerry responsive */
   @media only screen and (max-width: 850px){
