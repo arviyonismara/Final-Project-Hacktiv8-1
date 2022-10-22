@@ -1,0 +1,42 @@
+/* Navbar */
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    z-index: 5;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 20px;
+    color: #111;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: #111;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.button-primary{
+    width: 120px;
+    height: 40px;
+    color: #492700;
+    background-color: transparent;
+    border: 3px solid #a77940;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.button-secondary{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #492700;
+}

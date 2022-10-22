@@ -11,7 +11,18 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Home.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!-- Logo title bar -->
+    <link rel="icon" href="" type="image/x-icon" />
+    <title>Company Profile</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -19,6 +30,265 @@
     <script>
       $(function () {
         $("#navbar-placeholder").load("components/navbar.html");
+      });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 hero-tagline">
+            <h1>Create your digital Invitation.</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              eveniet blanditiis soluta accusantium quos quisquam ab facilis
+              explicabo ea aliquam.
+            </p>
+            <a class="button-hero" href="/">Order Now!</a>
+          </div>
+        </div>
+        <img
+          src="resources/iphone1.png"
+          alt="Iphone2.jpg"
+          class="position-absolute end-0 bottom-0 img-hero"
+        />
+      </div>
+    </section>
+
+    <!-- Service section -->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Our Services</h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4 text-center">
+            <div class="card-service">
+              <div class="icon position-relative mx-auto">
+                <img
+                  src="/resources/invitation.png"
+                  alt=""
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <h3 class="mt-4">Lorem Ipsum</h3>
+              <p class="mt-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+                tenetur fuga illo alias sit natus incidunt eius.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card-service">
+              <div class="icon position-relative mx-auto">
+                <img
+                  src="/resources/invitation.png"
+                  alt=""
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <h3 class="mt-4">Lorem Ipsum</h3>
+              <p class="mt-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+                tenetur fuga illo alias sit natus incidunt eius.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card-service">
+              <div class="icon position-relative mx-auto">
+                <img
+                  src="/resources/invitation.png"
+                  alt=""
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <h3 class="mt-4">Lorem Ipsum</h3>
+              <p class="mt-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+                tenetur fuga illo alias sit natus incidunt eius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="service">
+      <div class="container-fluid">
+        <div class="row d-flex flex-wrap">
+          <div class="col-12 text-center">
+            <h2>Galleries</h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img
+              class=""
+              src="/resources/pexels-trung-nguyen-2959188.jpg"
+              alt=""
+            />
+            <img src="/resources/pexels-jonathan-borba-3397026.jpg" alt="" />
+            <img src="/resources/pexels-lewis-ashton-11350944.jpg" alt="" />
+            <img
+              src="/resources/pexels-asad-photo-maldives-2548558.jpg"
+              alt=""
+            />
+            <img src="/resources/pexels-melike-benli-8911126.jpg" alt="" />
+          </div>
+          <div class="column">
+            <img src="/resources/pexels-melike-benli-8911126.jpg" alt="" />
+            <img
+              src="/resources/pexels-asad-photo-maldives-2548558.jpg"
+              alt=""
+            />
+            <img src="/resources/pexels-lewis-ashton-11350944.jpg" alt="" />
+            <img src="/resources/pexels-jonathan-borba-3397026.jpg" alt="" />
+            <img src="/resources/pexels-trung-nguyen-2959188.jpg" alt="" />
+          </div>
+          <div class="column">
+            <img src="/resources/pexels-jonathan-borba-3397026.jpg" alt="" />
+            <img
+              src="/resources/pexels-asad-photo-maldives-2548558.jpg"
+              alt=""
+            />
+            <img src="/resources/pexels-lewis-ashton-11350944.jpg" alt="" />
+            <img src="/resources/pexels-trung-nguyen-2959188.jpg" alt="" />
+            <img src="/resources/pexels-melike-benli-8911126.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- carousel -->
+    <section id="fitur" class="mt-5 overflow-hidden">
+      <div class="container position-relative">
+        <div class="row mb-3">
+          <div class="col-9">
+            <h2>fitur rumah</h2>
+          </div>
+          <div class="col-3">
+            <button class="button-fitur">
+              Lihat semua
+              <img src="" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justifiy-content-start">
+              <div class="card-fitur me-2 position-relative">
+                <img
+                  src="/resources/pexels-jonathan-borba-3397026.jpg"
+                  alt=""
+                  class="ms-4"
+                />
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar tidur</h5>
+                    <span>Responsive Wedding invitation </span>
+                    <h6>Rp. 50.000</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-fitur me-2 position-relative">
+                <img
+                  src="/resources/pexels-jonathan-borba-3397026.jpg"
+                  alt=""
+                  class="ms-4"
+                />
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar tidur</h5>
+                    <span>Responsive Wedding invitation </span>
+                    <h6>Rp. 50.000</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-fitur me-2 position-relative">
+                <img
+                  src="/resources/pexels-jonathan-borba-3397026.jpg"
+                  alt=""
+                  class="ms-4"
+                />
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar tidur</h5>
+                    <span>Responsive Wedding invitation </span>
+                    <h6>Rp. 50.000</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-fitur me-2 position-relative">
+                <img
+                  src="/resources/pexels-jonathan-borba-3397026.jpg"
+                  alt=""
+                  class="ms-4"
+                />
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar tidur</h5>
+                    <span>Responsive Wedding invitation </span>
+                    <h6>Rp. 50.000</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <img
+            src="/resources/Vector.png"
+            alt=""
+            class="position-absolute start-0 top-50 trasnlate-middle"
+          />
+        </button>
+        <button>
+          <img
+            src="/resources/Vector (1).png"
+            alt=""
+            class="position-absolute end-0 top-50 trasnlate-middle"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+      $(() => {
+        $("#footer-placeholder").load("components/footers.html");
       });
     </script>
 
