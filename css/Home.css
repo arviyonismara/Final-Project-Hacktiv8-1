@@ -7,7 +7,6 @@ html{
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #F5E8C7; */
     background: url(/resources/blurry2.jpg);
 }
 
@@ -215,6 +214,8 @@ body{
   .card-fitur .overlay:hover{
     opacity: 1;
   }
+
+  /* modal-bg */
 
 
   /* Galerry responsive */
