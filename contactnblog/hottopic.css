@@ -1,0 +1,13 @@
+body{
+    background: #16a085;
+   }
+.content{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    /* background-color: white; */
+}
+img{
+    width: 100%;
+}

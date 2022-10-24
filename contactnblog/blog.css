@@ -1,0 +1,83 @@
+body{
+    background-image: url("blurry2.jpg");
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    height: max-content;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.item-1{
+    flex-grow: 5;
+    padding: 30px;
+    border-right: 5px solid black;
+}
+.item-2{
+    flex-grow: 3;
+    padding: 30px;
+}
+.carousel{
+    width: 100%;
+    height: 600px;
+}
+.content{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+  }
+.nav-pills{
+    width: 450px;
+  }
+.nav-item{
+    width: 50%;
+  }
+.nav-pills .nav-link{
+    font-weight: bold;
+    padding-top: 13px;
+    text-align: center;
+    background: #343436;
+    color: #fff;
+    height: 100px;
+  }
+.nav-pills .nav-link.active{
+    background: #fff;
+    color: #000;
+  }
+.tab-content{
+    position: relative;
+    width: 450px;
+    height: auto;
+    margin-top: -50px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    z-index: 1000;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+.tab-content button{
+    border-radius: 15px;
+    width: 100px;
+    margin: 0 auto;
+    float: right;
+  }
+.card{
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.hottopic-content{
+  position: relative;
+  width: 450px;
+  height: auto;
+  background: #fff;
+  color: #000;
+  border-radius: 30px;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  margin-bottom: 50px;
+}
