@@ -1,0 +1,48 @@
+body,* {
+	padding:0;
+	margin:0;
+}
+
+/* meet our team */
+#meet-team{
+    padding: 100px 0;
+  }
+  .subtitle1{
+   font-size: 0.89em;
+   font-weight: bold;
+  }
+/* .card{
+    height: 300px;
+    width: 400px;
+} */
+.card{
+    width: 22rem; 
+    height: 28rem;
+    background: linear-gradient(160deg, #EDE5E2, #E3C4AF);
+    margin-top: 20px;
+}
+.card-img-top{
+    padding: 0;
+    /* width: 100%; */
+    height: 100%;
+    
+}
+.card h3{
+    color: #522c00;
+    font-size: 20px;
+}
+.card-text{
+    color: #522c00;
+    font-size: 14px;
+}
+#journey{
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    box-shadow: #AC7088 0px 5px, #DEB6AB 0px 10px, #ECCCB2 0px 15px, #F5E8C7 0px 20px;
+
+}
+.journey-img{
+    height: 100px;
+    width: 100px;
+}
