@@ -21,12 +21,13 @@
       src="https://kit.fontawesome.com/e387e799bf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link rel="stylesheet" href="css/Home.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="/css/footer.css" />
 
     <!-- Logo title bar -->
-    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="icon" href="/resources/invi.png" type="image/x-icon" />
     <title>Company Profile</title>
   </head>
   <body>
@@ -183,7 +184,32 @@
     </section>
 
     <!-- carousel -->
-    <section id="fitur" class="mt-5 overflow-hidden">
+    <div class="slider">
+      <h2>Partners Section</h2>
+      <section class="partners-logos slider">
+        <div class="slide">
+          <img src="/resources/slider/nike.png" alt="" />
+        </div>
+        <div class="slide"><img src="/resources/slider/invi.png" alt="" /></div>
+        <div class="slide">
+          <img src="/resources/slider/Netlify-Logo.wine.png" alt="" />
+        </div>
+        <div class="slide"><img src="/resources/slider/lv.png" alt="" /></div>
+        <div class="slide">
+          <img src="/resources/slider/Balenciaga.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/resources/slider/prada.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/resources/slider/gucci.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/resources/slider/Supreme-Emblem.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <!-- <section id="fitur" class="mt-5 overflow-hidden">
       <div class="container position-relative">
         <div class="row mb-3">
           <div class="col-9">
@@ -293,7 +319,7 @@
           />
         </button>
       </div>
-    </section>
+    </section> -->
 
     <!-- modal -->
     <div
@@ -381,6 +407,34 @@
     <script>
       $(() => {
         $("#footer-placeholder").load("components/footers.html");
+      });
+    </script>
+
+    <script>
+      $(document).ready(() => {
+        $(".partners-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
       });
     </script>
 
