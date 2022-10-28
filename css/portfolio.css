@@ -1,14 +1,19 @@
 body,* {
 	padding:0;
 	margin:0;
+	/* background-color: rgb(237,229,226); */
 }
 
-/* ========== Banner ========== */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==== Banner ==== */
 .banner {
-    font-family: Sofia;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* ========== filter card categories ========== */
+/* ==== filter card categories ==== */
 .filter {
 	/* margin-top: 100px; */
     font-family: Montserrat;

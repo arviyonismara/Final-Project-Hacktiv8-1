@@ -1,327 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    <!--========== Bootstrap CDN ========== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <!--========== CSS ========== -->
-    <link href="css/portfolio.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--========== Font ========== -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Montserrat"
-    />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>
-      $(function () {
-        $("#navbar-placeholder").load("components/navbar.html");
-      });
-    </script>
+  <!-- ==== Reload component for header and navbar  ==== -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    <!-- banner -->
-    <div class="banner card mb-3 border-0 rounded-0">
-      <img
-        src="/resources/banner-1.jpg "
-        style="height: 500px"
-        class="card-img-top rounded-0"
-        alt="picture"
-      />
-      <div class="card-body mt-4 text-center">
-        <h1 class="card-title">Tema Undangan</h1>
-        <p class="card-text fs-4">
-          Ini adalah template tema yang kami sediakan, banyak kategori desain
-          yang sangat cantik dan elegant.
-        </p>
-      </div>
+  <!-- ==== Bootstrap CDN ==== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- ==== CSS ==== -->
+  <link href="css/portfolio.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <!-- ==== Font ==== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Montserrat" />
+
+  <!-- ==== Icon ==== -->
+  <script src="https://kit.fontawesome.com/e387e799bf.js" crossorigin="anonymous"></script>
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- ==== Navbar ==== -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    $(function () {
+      $("#navbar-placeholder").load("components/navbar.html");
+    });
+  </script>
+
+  <!-- ==== banner ==== -->
+  <div class="banner card mb-3 border-0 rounded-0">
+    <img src="/resources/banner-1.jpg " style="height: 500px" class="card-img-top rounded-0" alt="picture" />
+    <div class="card-body mt-4 text-center">
+      <h1 class="card-title">Tema Undangan</h1>
+      <p class="card-text fs-4">
+        Ini adalah template tema yang kami sediakan, banyak kategori desain
+        yang sangat cantik dan elegant.
+      </p>
+    </div>
+  </div>
+
+  <!-- ==== filter card categories ==== -->
+  <!-- Control buttons -->
+  <div class="filter">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterSelection('elegant')">
+        Elegant
+      </button>
+      <button class="btn" onclick="filterSelection('dark')">Dark</button>
+      <button class="btn" onclick="filterSelection('golden')">Golden</button>
+      <button class="btn" onclick="filterSelection('blue')">Blue</button>
     </div>
 
-    <!-- filter card categories -->
-    <!-- Control buttons -->
-    <div class="filter">
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="btn" onclick="filterSelection('elegant')">
-          Elegant
-        </button>
-        <button class="btn" onclick="filterSelection('dark')">Dark</button>
-        <button class="btn" onclick="filterSelection('golden')">Golden</button>
-        <button class="btn" onclick="filterSelection('blue')">Blue</button>
+    <!-- Multiple Categories -->
+    <div class="row row-cols-1 row-cols-md-4 g-3 m-3">
+      <div class="filterDiv elegant col">
+        <div class="card">
+          <a href="project.html"><img src="/resources/Elegant_Green-1.jpg" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Elegant Green</h5>
+            <p class="card-text">October 28 2022</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Multiple Categories -->
-      <div class="row row-cols-1 row-cols-md-4 g-3 m-3">
-        <div class="filterDiv elegant col">
-          <div class="card">
-            <a href="project.html"
-              ><img
-                src="/resources/Elegant_Green-1.jpg"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Elegant Green</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv elegant col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Elegant_Green-2.jpg" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Elegant Green</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv elegant col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Elegant_Green-2.jpg"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Elegant Green</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv dark col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Dark_Flower-3.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Dark Flower</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv dark col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Dark_Flower-3.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Dark Flower</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv blue col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/blue-4.jpg" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Blue Elegant</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv blue col-4">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/blue-4.jpg"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Blue Elegant</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv golden col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/gold-elegant-5.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Gold Elegant</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv golden col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/gold-elegant-5.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Gold Elegant</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv blue col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/blue-6.jpg" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Blue Elegant</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv blue col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/blue-6.jpg"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Blue Elegant</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv golden col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/gold-elegant-7.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Gold Elegant</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv golden col-4">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/gold-elegant-7.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Gold Elegant</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv elegant col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Elegant_Green-8.jpg" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Elegant Green</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv elegant col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Elegant_Green-8.jpg"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Elegant Green</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv golden col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/gold-elegant-8.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Gold Elegant</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv golden col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/gold-elegant-8.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Gold Elegant</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv dark col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Dark_Flower-3.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Dark Flower</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv dark col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Dark_Flower-3.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Dark Flower</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv dark col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Dark_Flower-3.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Dark Flower</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv dark col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Dark_Flower-3.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Dark Flower</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv dark col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Dark_Flower-3.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Dark Flower</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
+      </div>
 
-        <div class="filterDiv dark col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Dark_Flower-3.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Dark Flower</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="filterDiv dark col">
-          <div class="card">
-            <a href="project.html">
-              <img
-                src="/resources/Dark_Flower-3.png"
-                class="card-img-top"
-                alt="picture"
-            /></a>
-            <div class="card-body">
-              <h5 class="card-title">Dark Flower</h5>
-              <p class="card-text">October 28 2022</p>
-            </div>
+      <div class="filterDiv dark col">
+        <div class="card">
+          <a href="project.html">
+            <img src="/resources/Dark_Flower-3.png" class="card-img-top" alt="picture" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Dark Flower</h5>
+            <p class="card-text">October 28 2022</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-    <script>
-      $(() => {
-        $("#footer-placeholder").load("components/footers.html");
+  <!-- ==== Footer ====-->
+  <div id="footer-placeholder"></div>
+  <script>
+    $(() => {
+      $("#footer-placeholder").load("components/footers.html");
+    });
+  </script>
+
+  <!-- ==== filter card categories ====-->
+  <script>
+    filterSelection("all");
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
       });
-    </script>
+    }
+  </script>
+</body>
 
-    <!-- filter card categories -->
-    <script>
-      filterSelection("all");
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
-
-      // Show filtered elements
-      function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
-
-      // Hide elements that are not selected
-      function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
-
-      // Add active class to the current control button (highlight it)
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
-  </body>
 </html>
