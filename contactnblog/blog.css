@@ -1,6 +1,32 @@
 body{
     background: url("/resources/blurry1.jpg");
 }
+
+.contact{
+  background-image: url("couple.jpg");
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.contact h1{
+  font-size: 50px;
+  text-align: center;
+  border: 5px solid white;
+  color: white;
+  width: 350px;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+}
+
+#darken{
+    box-shadow: inset 0px 0px 300px 120px rgba(0, 0, 0, .7)
+}
+
 .container{
     display: flex;
     justify-content: space-evenly;
