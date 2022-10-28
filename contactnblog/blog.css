@@ -1,5 +1,5 @@
 body{
-    background-image: url("blurry2.jpg");
+    background: url("/resources/blurry1.jpg");
 }
 .container{
     display: flex;
