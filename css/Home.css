@@ -101,6 +101,10 @@ body{
     padding-left: 0;
   }
 
+  .col-md-4:hover{
+    padding: 8px;
+    transition: .5s;
+  }
   h2{
     font-size: 48px;
     font-weight: 700;
